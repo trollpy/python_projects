@@ -1,0 +1,45 @@
+data:
+  metadata_file: "data/metadata.csv"
+  chunk_size: 10000
+  sample_size: 50000  # Set to null for full dataset
+  cache_enabled: true
+
+analysis:
+  top_n_journals: 15
+  top_n_sources: 10
+  top_n_words: 30
+  word_min_length: 4
+  stop_words:
+    - "with"
+    - "from"
+    - "that"
+    - "this"
+    - "have"
+    - "been"
+    - "were"
+    - "their"
+    - "which"
+    - "about"
+    - "there"
+    - "these"
+    - "would"
+    - "among"
+    - "using"
+    - "based"
+
+visualization:
+  figure_width: 12
+  figure_height: 6
+  dpi: 300
+  style: "whitegrid"
+  color_palette: "viridis"
+  wordcloud:
+    width: 1200
+    height: 600
+    max_words: 150
+
+streamlit:
+  page_title: "COVID-19 Research Explorer"
+  page_icon: "🦠"
+  layout: "wide"
+  initial_sidebar_state: "expanded"
